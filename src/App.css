@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: mediumseagreen;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todoWrapper{
+    width: 700px;
+    padding: 20px;
+    background: forestgreen;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.todo-list{
+    margin: 10px 0;
+    padding: 10px;
+    width: 400px;
+    border: none;
+    background: rgb(161, 240, 161);
+    outline: 0;
+    color: black;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 18px;
+    border: 3px solid darkgreen;
+    background: blurred transparent;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-btn{
+    padding: 16px 20px 12px;
+    background: darkgreen;
+    color: white;
+    border: none;
+    outline: 0;
+    color: white;
+    font-weight: bold;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    margin-left: 0px;
+    border: 1px solid darkgreen;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task{
+    width: 500px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: mediumseagreen;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-style: bold;
+}
+
+.delete-btn ,.edit-btn{
+    color: white;
+    font-weight: bold;
+    background: darkgreen;
+    border: none;
+    outline: 0;
+    padding: 7px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.delete-logo , .edit-logo{
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
+
+.completed{
+    text-decoration: line-through;
+}
+
+p{
+    cursor: pointer;
 }
